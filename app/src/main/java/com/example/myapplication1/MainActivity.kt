@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         //todo:: function to calculate and return BMI
         fun calculateBMI(height:Double, weight:Double):Double{
 
-            return height / (weight*weight)
+            return weight / (height*height)
         }
 
         button.setOnClickListener() {
@@ -22,11 +22,9 @@ class MainActivity : AppCompatActivity() {
             //todo:: calculate BMI by invoke the function
             //todo:: display image and result
 
-            val weight: String = editText.text.toString()
-            val height: String = editText2.text.toString()
-            val weightInKg: Double = weight.toDouble()
-            val heightInM: Double = height.toDouble()
-            val BMI: Double = weightInKg / (heightInM * heightInM)
+            val weight: Double = editText.text.toString().toDouble()
+            val height: Double = editText2.text.toString().toDouble()
+            val BMI = calculateBMI( height , weight )
 
             if (BMI < 18.5) {
                 imageView.setImageResource(R.drawable.under)
