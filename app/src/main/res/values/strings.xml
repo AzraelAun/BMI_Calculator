@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application1</string>
+    <string name="CalculatorBMI">Calculator BMI</string>
+    <string name="EnterWeight">Enter Weight(kg) :</string>
+    <string name="EnterHeight">Enter Height(m) :</string>
+    <string name="Weighttxt"> </string>
+    <string name="Heighttxt"> </string>
+    <string name="Calculator">Calculator</string>
+    <string name="Reset">Reset</string>
+    <string name="BMI">BMI : </string>
+</resources>
